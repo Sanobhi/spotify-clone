@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Triangle (forward) -->
+  <path d="M4 6L15 12L4 18V6Z" fill="white"/>
+  
+  <!-- Right bar -->
+  <rect x="18" y="5" width="3" height="14" fill="white"/>
+</svg>
