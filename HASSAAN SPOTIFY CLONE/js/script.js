@@ -58,7 +58,7 @@ const playMusic = (track, pause = false) => {
 
 
 async function main() {
-   await getSong("songs/ncs")
+    await getSong("songs/ncs")
     console.log(songs)
 
     playMusic(songs[10], true)
@@ -175,15 +175,14 @@ async function main() {
         Currsong.volume = parseInt(e.target.value) / 100
     })
 
+    
     //    load the playlist when card is clicked
-
-
     Array.from(document.querySelector("card")).forEach(e => {
-        e.addEventListener("click", async item=>{
-        songs = await getSong(`songs/${item.dataset.folder}`)
-           
+        e.addEventListener("click", async item => {
+            songs = await getSong(`songs/${item.dataset.folder}`)
+
         })
-        
+
     });
 
 

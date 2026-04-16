@@ -54,7 +54,7 @@ body {
 }
 
 .library {
-    height: 90vh;
+    height: 115vh;
     min-height: 50vh;
     position: relative;
 
@@ -125,14 +125,14 @@ body {
 
 .button {
     display: flex;
-    gap: 10px;
+    gap: 6px;
 }
 
 .btnlogin {
-    width: 80px;
-    border-radius: 80px;
-    font-size: 20px;
-    padding: 10px;
+    width: 70px;
+    border-radius: 70px;
+    font-size: 17px;
+    /* padding: 10px; */
     opacity: none;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 .spotifyplaylist h1 {
-    padding: 16px;
+    padding: 5px;
 
 }
 
@@ -165,7 +165,7 @@ body {
 
 }
 
-.card > *{
+.card>* {
     padding-top: 15px;
 }
 
@@ -176,7 +176,7 @@ body {
     margin: 20px;
     max-height: 70vh;
     overflow-y: auto;
-
+    margin-bottom: 35vh;
 
 }
 
@@ -212,6 +212,7 @@ body {
     background-color: #252525;
     border-radius: 10px;
     padding: 0px 12px;
+
 
 }
 
@@ -388,14 +389,16 @@ body {
     .playbar {
         width: calc(100vw - 70px);
         font-size: 18px;
-        left: 20px;
+        left: 24px;
         right: 20px;
+
     }
 
     .hamburger {
         display: block;
         filter: invert(1);
         cursor: pointer;
+
     }
 
     .close {
@@ -411,11 +414,8 @@ body {
         width: calc(100vw - 75px);
     }
 
-    .cardContainer {
-        justify-content: center;
-        margin: 0;
-        
-    }
+
+
 
     .card {
         width: 42vw;
@@ -442,14 +442,47 @@ body {
     @media (max-width:500px) {
 
         .card {
-            width: 84vw;
+            width: 100%;
         }
 
+        .left {
+            width: 100vw;
+        }
+
+        .head>* {
+            padding: 2px;
+
+        }
+
+        .button>* {
+            margin: 0 6px;
+
+        }
+
+        .spotifyplaylist h1 {
+
+            padding: 5px;
+        }
+
+        .library {
+            height: 85vh;
+        }
+
+
+        .cardContainer {
+            width: 100%;
+            /* overflow-y: unset;
+        margin-bottom: 35vh; */
+        }
+
+
+
+
+
+
+
+
+
+
     }
-
-
-
-
-
-
 }
